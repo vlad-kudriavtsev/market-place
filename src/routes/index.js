@@ -4,8 +4,9 @@ import App from "../App";
 
 
 const HomePage = lazy(() => import("../pages/HomePage"))
-const Products = lazy(() => import("../components/Products"))
 const Authentication = lazy(() => import("../pages/Authentication"))
+const Favourite = lazy(() => import("../pages/Favourite"))
+const Basket = lazy(() => import("../pages/Basket"))
 
 
 
@@ -23,12 +24,12 @@ const routes = [
                 element: <Authentication />
             },
             {
-                path: 'phones',
-                element: <div>hello</div>
+                path: 'favourite',
+                element: <Favourite />
             },
             {
-                path: 'tv',
-                children: <Products />
+                path: 'basket',
+                element: <Basket />
             },
             {
                 path: '*',
