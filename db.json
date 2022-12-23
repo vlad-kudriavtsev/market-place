@@ -1,31 +1,40 @@
 {
-  "homepage": [
-    {
-      "id": 1,
-      "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
-      "model": "redmi",
-      "catalog": "phones",
-      "price": "14.50$"
-    },
-    {
-      "id": 2,
-      "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
-      "model": "samsung",
-      "catalog": "tv",
-      "price": "10.50$"
-    }
-  ],
-  "favourites": [
-    2,
-    {
-      "id": 1,
-      "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
-      "model": "redmi",
-      "catalog": "phones",
-      "price": "14.50$"
-    }
-  ],
+  "products": {
+    "tele": [
+      {
+        "id": 1,
+        "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
+        "model": "redmi",
+        "productType": "televisions",
+        "price": "14.50$"
+      },
+      {
+        "id": 2,
+        "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
+        "model": "samsung",
+        "productType": "televisions",
+        "price": "10.50$"
+      }
+    ],
+    "phones": [
+      {
+        "id": 11,
+        "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
+        "model": "redmi",
+        "productType": "phones",
+        "price": "14.50$"
+      },
+      {
+        "id": 22,
+        "url": "https://klike.net/uploads/posts/2020-07/1594278030_1.jpg",
+        "model": "samsung",
+        "productType": "phones",
+        "price": "10.50$"
+      }
+    ]
+  },
+  "favourites": [],
   "basket": [
-    2
+    
   ]
 }
