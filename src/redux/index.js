@@ -1,10 +1,10 @@
 import { combineReducers } from "@reduxjs/toolkit";
 
-import favouriteSlice from "./slices/favouriteSlice";
-import basketSlice from "./slices/basketSlice";
+import productsSlice from "./slices/productsSlice";
+import phonesSlice from "./slices/phonesSlice";
 
 export const rootReducer = combineReducers({
-    favouriteSlice,
-    basketSlice
+    productsSlice,
+    phonesSlice
 })
 

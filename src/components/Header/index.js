@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 const navigation = [
     {
         id: '1',
-        title: 'Войти',
-        to: 'auth'
+        title: 'Корзина',
+        to: 'basket'
     },
     {
         id: '2',
@@ -20,8 +20,8 @@ const navigation = [
 
     {
         id: '4',
-        title: 'Корзина',
-        to: 'basket'
+        title: 'Войти',
+        to: 'auth'
     },
 
 
@@ -30,8 +30,7 @@ const navigation = [
 const Header = () => {
     return (
         <header className="header">
-            <span><NavLink to='home'>Logo</NavLink></span>
-            <span>Каталог</span>
+            <span><NavLink to='products'>Logo</NavLink></span>
             <form action="" method="get">
                 <input className="header-input" name="s" placeholder="Искать здесь..." type="search" />
                 <button className="header-button" type="submit"></button>

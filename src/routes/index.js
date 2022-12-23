@@ -3,10 +3,12 @@ import { Navigate } from "react-router";
 import App from "../App";
 
 
-const HomePage = lazy(() => import("../pages/HomePage"))
+const ProductsCatalog = lazy(() => import("../pages/ProductsCatalog"))
 const Authentication = lazy(() => import("../pages/Authentication"))
 const Favourite = lazy(() => import("../pages/Favourite"))
 const Basket = lazy(() => import("../pages/Basket"))
+const Phones = lazy(() => import("../pages/Phones"))
+const Televisions = lazy(() => import("../pages/Televisions"))
 
 
 
@@ -16,8 +18,8 @@ const routes = [
         element: <App />,
         children: [
             {
-                path: 'home',
-                element: <HomePage />,
+                path: 'products',
+                element: <ProductsCatalog />,
             },
             {
                 path: 'auth',
@@ -32,8 +34,16 @@ const routes = [
                 element: <Basket />
             },
             {
+                path: 'phones',
+                element: <Phones />
+            },
+            {
+                path: 'televisions',
+                element: <Televisions />
+            },
+            {
                 path: '*',
-                element: <Navigate to='home'/>,
+                element: <Navigate to='products'/>,
             }
         ]
     }
